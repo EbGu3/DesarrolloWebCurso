@@ -8,7 +8,13 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
 body {
     font-size: 16px; /* 1rem = 10px*/
     font-family: 'Krub', sans-serif;
@@ -45,14 +51,14 @@ body {
     flex-direction: column;
 }
 
-/*Codigo Resposive Web Disign*/
-
+/*Inicia codigo Resposive Web Disign*/
 @media (min-width: 768px) {
     .navegacion-principal {
         flex-direction: row;
         justify-content: space-between;
     }
 }
+/*Finaliza codigo Resposive Web Disign*/
 
 .navegacion-principal a {
     display: block;
@@ -73,7 +79,6 @@ body {
     background-image: url(../Img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 30rem;
+    padding: 2rem;
 }
-
-
-
